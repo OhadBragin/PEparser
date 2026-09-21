@@ -7,7 +7,8 @@ typedef enum {
     PE_TYPE_UNKNOWN = 0,   // valid file but not PE
     PE_TYPE_EXE,           // .exe
     PE_TYPE_DLL,           // .dll
-    PE_TYPE_SYS            // .sys
+    PE_TYPE_SYS,           // .sys
+    PE_TYPE_NATIVE         // native process
 } PeType;
 
 PeType detect_pe_type(FILE* fp);

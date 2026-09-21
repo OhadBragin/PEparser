@@ -23,9 +23,15 @@ cl /O2 PEparser\*.c /Fe:peparser.exe
 ## Running
 
 ```bash
-# Windows
-peparser.exe <binary_file>
+# Windows (single-config generators)
+build\peparser.exe <binary_file>
 
-# Linux / macOS
-./peparser <binary_file>
+# Windows (Visual Studio)
+build\Debug\peparser.exe <binary_file>
+
+# Linux / macOS (single-config generators)
+./build/peparser <binary_file>
+
+# macOS (Xcode)
+./build/Debug/peparser <binary_file>
 ```
