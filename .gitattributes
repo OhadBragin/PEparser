@@ -1,0 +1,22 @@
+﻿# Auto detect text files and perform LF normalization on checkin
+* text=auto
+
+# C / C++ source and header files
+*.c text diff=c
+*.h text diff=c
+*.cpp text diff=cpp
+*.hpp text diff=cpp
+
+# Visual Studio files
+*.sln text eol=crlf
+*.slnx text eol=crlf
+*.vcxproj text eol=crlf
+*.vcxproj.filters text eol=crlf
+*.props text eol=crlf
+*.targets text eol=crlf
+
+# Binary files
+*.exe binary
+*.dll binary
+*.lib binary
+*.pdb binary
